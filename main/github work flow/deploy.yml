@@ -1,4 +1,4 @@
-name: Deploy to Firebase
+name: Deploy render
 
 on:
   workflow_dispatch:
