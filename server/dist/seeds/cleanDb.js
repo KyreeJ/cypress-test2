@@ -5,6 +5,7 @@ export default async (modelName, collectionName) => {
         let modelExists = await models[modelName].db.db.listCollections({
             name: collectionName
         }).toArray();
+        console.log('model exist locally ', modelExists);
         if (modelExists.length) {
             await db.dropCollection(collectionName);
         }
